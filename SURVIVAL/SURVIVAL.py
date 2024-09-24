@@ -1,24 +1,6 @@
-﻿import time
+﻿from artwork import *
 
-def print_slow(text,speed):
-    #Prints text one character at a time."""
-    for char in text:
-        print(char, end='', flush=True)
-        time.sleep(speed)
-
-print_slow(R"""
-
-  ██████  █    ██  ██▀███   ██▒   █▓ ██▓ ██▒   █▓ ▄▄▄       ██▓    
-▒██    ▒  ██  ▓██▒▓██ ▒ ██▒▓██░   █▒▓██▒▓██░   █▒▒████▄    ▓██▒    
-░ ▓██▄   ▓██  ▒██░▓██ ░▄█ ▒ ▓██  █▒░▒██▒ ▓██  █▒░▒██  ▀█▄  ▒██░    
-  ▒   ██▒▓▓█  ░██░▒██▀▀█▄    ▒██ █░░░██░  ▒██ █░░░██▄▄▄▄██ ▒██░    
-▒██████▒▒▒▒█████▓ ░██▓ ▒██▒   ▒▀█░  ░██░   ▒▀█░   ▓█   ▓██▒░██████▒
-▒ ▒▓▒ ▒ ░░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░   ░ ▐░  ░▓     ░ ▐░   ▒▒   ▓▒█░░ ▒░▓  ░
-░ ░▒  ░ ░░░▒░ ░ ░   ░▒ ░ ▒░   ░ ░░   ▒ ░   ░ ░░    ▒   ▒▒ ░░ ░ ▒  ░
-░  ░  ░   ░░░ ░ ░   ░░   ░      ░░   ▒ ░     ░░    ░   ▒     ░ ░   
-      ░     ░        ░           ░   ░        ░        ░  ░    ░  ░
-                                ░            ░                     
-""",0.0005)     
+survival()
 
 print_slow("Welcome to Survival\n",0.05)
 print_slow("You are a deprived youth born in the slums of East London.\n",0.05)
@@ -49,8 +31,12 @@ if(startChoice == "no"):
 
 if(startChoice == "yes"):
     print_slow("You are 18 years of age living in a youth hostel\n",0.05)
+    print_slow("The school you go to is in Hackney, The Urswick school\n",0.05)
+    
+
+
     print_slow("Your 'friend', David asks if you want to skip school to earn money, however you know its illegal.\n",0.05)
-    print_slow("Will to join him?(yes/no)\n",0.05)
+    print_slow("Will you join him?(yes/no)\n",0.05)
 
     #Promt user for a choice
     moneyChoice = input("> ")
@@ -75,9 +61,9 @@ if(startChoice == "yes"):
 """,0.0005)            
        
     elif(moneyChoice == "no"):
-        print_slow("Now your 'friend', David becomes your enemy",0.05)
+        print_slow("Now your 'friend', David becomes your enemy\n",0.05)
         print_slow("He now wants to have a fight\n",0.05)
-        print_slow("You agree to fight, will you (kick) him in the face or (punch) him in the stomach\n",0.05)
+        print_slow("You agree to fight, will you kick him in the face or punch him in the stomach (kick/punch)\n",0.05)
 
         #Promt user for input
         fightChoice = input("> ")
