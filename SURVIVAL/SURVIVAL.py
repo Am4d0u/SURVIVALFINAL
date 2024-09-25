@@ -13,22 +13,10 @@ startChoice = input("> ")
 
 if(startChoice == "no"):
     print_slow("You have forfeited, what a shame\n",0.075)
-    print_slow("""
-        
 
-  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  
- ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
-▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
-░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  
-░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒
- ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░
-  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░
-░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░ 
-      ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░     
-                                                     ░                   
-""",0.0005)
+    gameover()
 
-if(startChoice == "yes"):
+elif(startChoice == "yes"):
     print_slow("You are 18 years of age living in a youth hostel\n",0.075)
     print_slow("The school you go to is in Hackney, The Urswick school\n",0.075)
     print_slow("You become friends with David\n",0.075)
@@ -36,13 +24,13 @@ if(startChoice == "yes"):
     
     friendChoice = input("> ")
     
-if(friendChoice == "yes"):
-    print_slow("You lose all popularity.\n",0.075)
-    print_slow("You")
+    if(friendChoice == "yes"):
+        print_slow("You lose all popularity.\n",0.075)
+        print_slow("You")
     
-elif(friendChoice == "no"):
-    print_slow("Your 'friend', David asks if you want to skip school to earn money, however you know its illegal.\n",0.075)
-    print_slow("Will you join him? (yes/no)\n",0.075)
+    elif(friendChoice == "no"):
+        print_slow("Your 'friend', David asks if you want to skip school to earn money, however you know its illegal.\n",0.075)
+        print_slow("Will you join him? (yes/no)\n",0.075)
 
     #Promt user for a choice
     moneyChoice = input("> ")
@@ -51,20 +39,11 @@ elif(friendChoice == "no"):
         print_slow("Your friend introduces you to his gang.\n",0.075)
         print_slow("You and his gang scheme to rob a house.\n",0.075)
         print_slow("It turns left and you are killed by the house owner's pitbull \n",0.075)
-        print_slow("""
+
+        gameover()
         
 
-  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  
- ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
-▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
-░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  
-░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒
- ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░
-  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░
-░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░ 
-      ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░     
-                                                     ░                   
-""",0.0005)            
+            
        
     elif(moneyChoice == "no"):
         print_slow("Now your 'friend', David becomes your enemy\n",0.075)
@@ -86,20 +65,8 @@ elif(friendChoice == "no"):
         elif(fightChoice == "punch"):
                 print_slow("David takes out a gun and shoots you multiple times\n",0.075)
                 print_slow("You die.\n",0.075)
-                print_slow("""
-        
 
-  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  
- ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
-▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
-░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  
-░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒
- ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░
-  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░
-░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░ 
-      ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░     
-                                                     ░                   
-""",0.0005)
+                gameover()
         else :
                       print("Invalid. Please enter yes or no\n")
 
