@@ -6,7 +6,7 @@ print_slow("Welcome to Survival\n",0.05)
 print_slow("You are a deprived youth born in the slums of East London.\n",0.075)
 print_slow("In order to win in life you have to choose the right choices.\n",0.075)
 print_slow("These choices could either have a good or bad impact on you.\n",0.075)
-print_slow("Do you have what it takes to SURVIVE. (yes/no)\n",0.075)
+print_slow("Do you have what it takes to SURVIVE. (yes/no)\n",0.25)
 
 ### Promt user for a choice
 startChoice = input("> ")
@@ -18,19 +18,21 @@ if(startChoice == "no"):
 
 elif(startChoice == "yes"):
     print_slow("You are 18 years of age living in a youth hostel\n",0.075)
-    print_slow("The school you go to is in Hackney, The Urswick school\n",0.075)
+    print_slow("The school you go to is in Hackney, Mulburry secondary school\n",0.075)
     print_slow("You become friends with David\n",0.075)
-    print_slow("Do you become friends with Jacob, he wants to befriend you (yes/no)\n",0.075)
+    print_slow("Do you become friends with Jacob (yes/no)\n",0.25)
     
     friendChoice = input("> ")
     
     if(friendChoice == "yes"):
         print_slow("You lose all popularity.\n",0.075)
-        print_slow("You")
-    
+        print_slow("David kills you because you chose to be Jacobs friend instead of his.\n",0.075)
+        gameover()
+
     elif(friendChoice == "no"):
+        print_slow("You become friends with David instead, who is a bad influence.\n",0.075)
         print_slow("Your 'friend', David asks if you want to skip school to earn money, however you know its illegal.\n",0.075)
-        print_slow("Will you join him? (yes/no)\n",0.075)
+        print_slow("Will you join him? (yes/no)\n",0.25)
 
     #Promt user for a choice
     moneyChoice = input("> ")
@@ -39,10 +41,9 @@ elif(startChoice == "yes"):
         print_slow("Your friend introduces you to his gang.\n",0.075)
         print_slow("You and his gang scheme to rob a house.\n",0.075)
         print_slow("It turns left and you are killed by the house owner's pitbull \n",0.075)
+        pitbull()
 
         gameover()
-        
-
             
        
     elif(moneyChoice == "no"):
@@ -50,7 +51,7 @@ elif(startChoice == "yes"):
         print_slow("He now wants to have a fight\n",0.075)
         
         
-        print_slow("You agree to fight, will you kick him in the face or punch him in the stomach (kick/punch)\n",0.075)
+        print_slow("You agree to fight, will you kick him in the face or punch him in the stomach? (kick/punch)\n",0.25)
 
         #Promt user for input
         fightChoice = input("> ")
@@ -60,7 +61,8 @@ elif(startChoice == "yes"):
             print_slow("You are sentenced to 3 years for manslaughter\n",0.075)
             print_slow("3 YEARS LATER...\n",0.075)
             print_slow("You are 22 now, struggling to find a job and living on the streets\n.",0.075)
-            print_slow("David's gang is looking for revenge\n",0.075)
+            print_slow("David's gang is looking for revenge.\n",0.075)
+            print_slow("Will you join a gang or move cities? (gang/move)\n",0.25)
             
         elif(fightChoice == "punch"):
                 print_slow("David takes out a gun and shoots you multiple times\n",0.075)
