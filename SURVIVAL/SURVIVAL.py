@@ -30,8 +30,10 @@ elif(startChoice == "yes"):
         gameover()
 
     elif(friendChoice == "no"):
-        print_slow("You become friends with David instead, who is a bad influence.\n",0.075)
-        print_slow("Your 'friend', David asks if you want to skip school to earn money, however you know its illegal.\n",0.075)
+        print_slow("You become friends with David instead, who is a bad "
+                  "influence.\n",0.075)
+        print_slow("Your 'friend', David asks if you want to skip school to,"
+                   "earn money, however you know its illegal.\n",0.075)
         print_slow("Will you join him? (yes/no)\n",0.25)
 
     #Promt user for a choice
@@ -40,7 +42,8 @@ elif(startChoice == "yes"):
     if(moneyChoice == "yes"):
         print_slow("Your friend introduces you to his gang.\n",0.075)
         print_slow("You and his gang scheme to rob a house.\n",0.075)
-        print_slow("It turns left and you are killed by the house owner's pitbull \n",0.075)
+        print_slow("It turns left and you are killed", 
+               "by the house owner's pitbull \n",0.075)
         pitbull()
 
         gameover()
@@ -51,9 +54,10 @@ elif(startChoice == "yes"):
         print_slow("He now wants to have a fight\n",0.075)
         
         
-        print_slow("You agree to fight, will you kick him in the face or punch him in the stomach? (kick/punch)\n",0.25)
+        print_slow("You agree to fight, will you kick him in the face",
+              "or punch him in the stomach? (kick/punch)\n",0.25)
 
-        #Promt user for input
+        #Prompt user for input
         fightChoice = input("> ")
 
         if(fightChoice == "kick"):
@@ -63,6 +67,18 @@ elif(startChoice == "yes"):
             print_slow("You are 22 now, struggling to find a job and living on the streets\n.",0.075)
             print_slow("David's gang is looking for revenge.\n",0.075)
             print_slow("Will you join a gang or move cities? (gang/move)\n",0.25)
+
+        #Prompt user for input
+        moveChoice = input("> ")
+
+        if(moveChoice == "move"):
+            print_slow("You move to Birmingham; start a new life and get a job.\n",0.075)
+            print_slow("5 years later...The UK is bombed by Russia....",
+               "everyone dies including you....THE END.\n",0.075)
+
+        elif(moveChoice == "gang"):
+            print_slow("You join the opposing gang and start selling drugs for them.\n",0.075)
+
             
         elif(fightChoice == "punch"):
                 print_slow("David takes out a gun and shoots you multiple times\n",0.075)
