@@ -193,7 +193,9 @@ else:
                 print_slow("David takes a gun and shoots you multiple times\n",0.075)
                 print_slow("You die.\n",0.075)
 
-                gameover()
+        shooter()
+        gameover()
+
         else :
             print("Invalid. Please enter yes or no\n")
       
