@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Learner\\Documents\\GitHub\\SURVIVALFINAL\\SURVIVAL\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2A989F5-F280-46C6-8053-2B3524B026AE}|SURVIVAL.pyproj|C:\\Users\\Learner\\Documents\\GitHub\\SURVIVALFINAL\\SURVIVAL\\SURVIVAL.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{C2A989F5-F280-46C6-8053-2B3524B026AE}|SURVIVAL.pyproj|C:\\Users\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\SURVIVAL.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C2A989F5-F280-46C6-8053-2B3524B026AE}|SURVIVAL.pyproj|solutionrelative:SURVIVAL.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A989F5-F280-46C6-8053-2B3524B026AE}|SURVIVAL.pyproj|C:\\Users\\Learner\\Documents\\GitHub\\SURVIVALFINAL\\SURVIVAL\\artwork.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{C2A989F5-F280-46C6-8053-2B3524B026AE}|SURVIVAL.pyproj|C:\\Users\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\artwork.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C2A989F5-F280-46C6-8053-2B3524B026AE}|SURVIVAL.pyproj|solutionrelative:artwork.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -24,12 +24,12 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SURVIVAL.py",
-              "DocumentMoniker": "C:\\Users\\Learner\\Documents\\GitHub\\SURVIVALFINAL\\SURVIVAL\\SURVIVAL.py",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\SURVIVAL.py",
               "RelativeDocumentMoniker": "SURVIVAL.py",
-              "ToolTip": "C:\\Users\\Learner\\Documents\\GitHub\\SURVIVALFINAL\\SURVIVAL\\SURVIVAL.py",
+              "ToolTip": "C:\\Users\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\SURVIVAL.py",
               "RelativeToolTip": "SURVIVAL.py",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAnwCAAAABJAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMYAAAAGAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD\u002BSURBVDhPrVMhDoNAEDwaBAKBQFQgEAgkkj/wFJ6BQCB4AgLBExAIJBKJQCAQiJomCOSUuwLpcU1IoZNMbvd2d7K7uZOejzvISWj6QMgicIq09jYbG0zTZJRlebl5Q9M0oqrq4u3w2cE0TSjLEn3fw/d9zEXI8xxd12EYBsRxLHTACdBEerqui7ZtEYYhkiRhd4qiIMsyOI6z5QsC4ziygqZpEAQBiqKA53lbfE9BgLY\u002B7wC6rjM/iiJGas97YbZlWVu\u002BILCOsJLuoK5rVFXFukrTlIsLAoZhcAkrbdv\u002BGhMEfiWt5d7BGfxXAIDAI3ACkiQJPMLlES59Z0IIeQEUrPWOIvNwYQAAAABJRU5ErkJggg==",
               "WhenOpened": "2024-09-18T15:32:36.899Z",
               "EditorCaption": ""
             },
@@ -37,12 +37,12 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "artwork.py",
-              "DocumentMoniker": "C:\\Users\\Learner\\Documents\\GitHub\\SURVIVALFINAL\\SURVIVAL\\artwork.py",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\artwork.py",
               "RelativeDocumentMoniker": "artwork.py",
-              "ToolTip": "C:\\Users\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\artwork.py*",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\artwork.py*",
-              "ViewState": "AgIAACIAAAAAAAAAAAAcwFEAAAAKAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKkSURBVDhPdVPPaxNBGH2zs0k2ySabpC0NDVJIURBESyOCB28KKkgPgvgP9CSCF8FbBQVPWkRBFA/echbBItKLqNBCtY3FkpYYLElsYn7sZtOkibs7zk6LTYQ\u002B\u002BBi\u002B2e\u002B9\u002Bd43swT9YEw6nfl0NGSZtyOe5vURWg\u002BOyFWM0JqIYVrnaxXDch0qaXZuqo8suk8FZmflRNd/glD6wMu6V/1kV/GjDYV1oGBXhI904EMXCv0Dn2R5rvTeVvY64GRP1XPSp9izobHYZU1uyWHJhEZNuOtBtBCiLZw7K2FME\u002BJF0Tbe/DiFWw9fU0pZLBZj8XichcNhJssyi0QibHR0lPn9fkYIYfw49updin0tnmHfSycLMj6bx6Bq9xA/cikajWJ6ehqchK2tLRSLRYyPj0PTNGQyGaysrKDdbqPpqKjZCjykCxmM3AHIRUhEVlUVk5OT8Hq9mJiYQLfbRTabRT6fRzAYhKIo\u002BwJhLqBycg8SF7gGSfKIWXDwNtFqtbC8vIyNjQ1sb29jc3MTlUoFlmWJGsPWULVjqDpDXITAL3Y5Op0OFhcXsbS0JE5NpVJIJpOYmpoS3wqFgqjT7bAQkJjFBfrQaDSwsLAAwzDQ6/WwuroqTg4EAiiXy9B1XdTpjgafPQTKHG6hDy6pVCphZ2dH5K7fXC6HtbU1IWTbttjX\u002BQyqlmsh2hgQOAyMubd3gIY7AytmNFno\u002BYCFRCKBmZkZ8DsX\u002Bfr6Oubn50X7/Wj0VN2xwk\u002Bjii89IFCr1ZBOp8EflMhN0/znux9G9uecnEy\u002B/HL8fJ3gY4vxHrlhEyjl90sOgW3ryH2bC3jZi/bdG2V\u002B54zgQ5OPUtr7J/7zOgDGDDj2E/SsZ7gw/Mslu9sSKN7DcfaY/BEdEr9BpPtg9HE/GQD\u002BAomQN8UB1dN/AAAAAElFTkSuQmCC",
+              "ToolTip": "C:\\Users\\user\\Documents\\SURVIVALFINAL\\SURVIVALFINAL\\SURVIVAL\\artwork.py",
+              "RelativeToolTip": "artwork.py",
+              "ViewState": "AgIAAGgAAAAApOpiWdAkwHYAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD\u002BSURBVDhPrVMhDoNAEDwaBAKBQFQgEAgkkj/wFJ6BQCB4AgLBExAIJBKJQCAQiJomCOSUuwLpcU1IoZNMbvd2d7K7uZOejzvISWj6QMgicIq09jYbG0zTZJRlebl5Q9M0oqrq4u3w2cE0TSjLEn3fw/d9zEXI8xxd12EYBsRxLHTACdBEerqui7ZtEYYhkiRhd4qiIMsyOI6z5QsC4ziygqZpEAQBiqKA53lbfE9BgLY\u002B7wC6rjM/iiJGas97YbZlWVu\u002BILCOsJLuoK5rVFXFukrTlIsLAoZhcAkrbdv\u002BGhMEfiWt5d7BGfxXAIDAI3ACkiQJPMLlES59Z0IIeQEUrPWOIvNwYQAAAABJRU5ErkJggg==",
               "WhenOpened": "2024-09-25T08:54:40.326Z"
             }
           ]
