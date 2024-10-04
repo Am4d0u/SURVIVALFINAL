@@ -11,12 +11,9 @@ while name == "":
     name = input("Enter your name: \n\n")
 
 while int(len(name)) > 15:
-    print("Characters cannot exceed 15 \n\n")
     #max chars
-
+    print("Characters cannot exceed 15 \n\n")
     name = input("Enter your name: \n\n")
-else:
-    print(f"Hello {name}")
 age = int(input("What is your age: \n\n"))
 
 while age < 16:
@@ -81,7 +78,11 @@ elif(startChoice == "yes"):
         fightChoice = input("> ")
 
         if(fightChoice == "punch"):
-            print_slow("")
+           print_slow("David takes a gun and shoots you multiple times\n\n",0.075)
+           print_slow("You die.\n\n",0.075)
+
+           gameover()
+
 
         elif(fightChoice == "kick"):
             print_slow("You kick David in the head and he dies from brain damage\n\n",0.075)
@@ -90,6 +91,7 @@ elif(startChoice == "yes"):
             print_slow("You are 22 now, struggling to find a job and living on the streets\n\n",0.075)
             print_slow("David's gang is looking for revenge\n\n",0.075)
             print_slow("Will you join a gang or move cities? (gang/move)\n\n",0.25)
+
 
         #Prompt user for input
         moveChoice = input("> ")
@@ -104,31 +106,26 @@ elif(startChoice == "yes"):
 
         elif(moveChoice == "gang"):
             print_slow("You join a gang and start selling drugs for them.\n\n",0.075)
-            print_slow("It's been a year of you selling drugs.\n\n")
-            print_slow("You have made £50,000 in this year")
+            print_slow("It's been a year of you selling drugs.\n\n",0.075)
+            print_slow("You have made £50,000 in this year\n\n",0.075)
             print_slow("Will you start a legitmate business instead? (yes/no)\n\n",0.25)
 
         #prompt user for input
-        businessChoice == input("> ")
+        businessChoice = input("> ")
+        #Fresh Start
 
         if(businessChoice == "yes"):
             print_slow("You start a car dealership.\n\n",0.075)
-            print_slow("The business value skyrockets to £500,000 in the first year")
-            print_slow("You meet a person called Nathan")
-            print_slow("")
+            print_slow("The business value skyrockets to £500,000 in the first year.\n\n",0.075)
+            print_slow("You meet a person called Nathan.\n\n",0.075)
+            print_slow("Nathan:'I can help you increase the scale of your business by x10.'\n\n",0.075)
+            print_slow("You: 'How will you do that'\n\n",0.075)
+            print_slow("Nathan:'I have a couple friends in the government that control the billboards in the middle of major cities which will most certainly get your business the publicity it needs to spread nationwide'\n\n",0.075)
+            print_slow("Nathan:'This publicity will bring an influx of 100% more customers including celebrities and major figures\n\n",0.075)
+            print_slow("You: 'what is the catch?'\n\n",0.075)
+            print_slow("Nathan: 'I need to own 50% shares of this business'\n\n",0.075)
+            print_slow("Will you accept this offer? (yes/no)\n\n",0.25)
 
         elif(businessChoice == "no"):
-            print_slow("You are murdered the next week by another dealer")
+            print_slow("You are murdered the next week by another dealer\n\n",0.075)
             gameover()
-            
-
-            
-        elif(fightChoice == "punch"):
-                print_slow("David takes a gun and shoots you multiple times\n\n",0.075)
-                print_slow("You die.\n\n",0.075)
-
-
-                gameover()
-        else :
-            print("Invalid. Please enter yes or no\n\n")
-      
