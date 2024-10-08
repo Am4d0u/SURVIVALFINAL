@@ -1,7 +1,5 @@
-﻿from os import name
-from tkinter import N
-from typing import Self
-from artwork import *
+﻿from artwork import *
+from Battle import *
 
 pegi()
 survival()
@@ -70,12 +68,7 @@ elif(startChoice == "yes"):
         exit()
             
     elif(moneyChoice == "no"):
-        print_slow("Now your 'friend', David becomes your enemy\n\n",0.075)
-        print_slow("He now wants to have a fight\n\n",0.075)
-        print_slow("You agree to fight.\n\n",0.075)
-        print_slow("Will you punch or kick him? (punch/kick)\n\n",0.075)
-        #Prompt user for input
-        fightChoice = input("> ")
+        battle(player, enemy)
 
         if(fightChoice == "punch"):
            print_slow("David takes a gun and shoots you multiple times\n\n",0.075)
