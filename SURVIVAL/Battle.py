@@ -1,50 +1,29 @@
-from tkinter import CHAR
-from weapon import fists
+# battle.py
 
 class Character:
-    def __init__(self, 
-                 name: str, 
-                 health: int,
-                 ) -> None:
+    def __init__(self, name, health):
         self.name = name
         self.health = health
-        self.health_max = health
 
-        self.weapon = fists
-
-    def attack(self, target ) -> None:
-        target.health -= self.weapon.damage
-        target.health = max(target.health, 0)
-
-        def attack(self, target) -> None:
-            target.health -= self.weapon.damage
-            target.health = max(target.health, 0)
-
-hero = Hero(name= "Hero", health=100)
-enemy = Enemy(name ="David", health=100)
-
-while True:
-    hero.attack(enemy)
-    enemy.attack(hero)
-
-    print(f"Health of {hero.name}: {hero.health}")
-    print(f"Health of {enemy.name}: {enemy.health}")
-
-    input()
+    def is_alive(self):
+        return self.health > 0
 
 class Hero(Character):
-    def __int__(self,
-                name: str,
-                health: int
-                ) -> None:
-        super().__init__(name=name, health=health)
+    def __init__(self, name):
+        super().__init__(name, health=100)  # Hero starts with 100 health
 
+    def punch(self, enemy):
+        damage = 10  # Damage dealt
+        enemy.health -= damage
+
+    def kick(self, enemy):
+        damage = 15  # Damage dealt
+        enemy.health -= damage
 
 class Enemy(Character):
-    def __int__(self,
-                name: str,
-                health: int
-                ) -> None:
-        super().__init__(name=name, health=health)
+    def __init__(self, name):
+        super().__init__(name, health=50)  # Enemy starts with 50 health
 
-
+    def attack(self, hero):
+        damage = 10  # Damage dealt
+        hero.health -= damage
