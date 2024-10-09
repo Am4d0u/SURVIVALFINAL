@@ -22,8 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="artwork.py" />
-    <Compile Include="Battle.py" />
+    <Compile Include="battle.py" />
     <Compile Include="SURVIVAL.py" />
+    <Compile Include="weapon.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

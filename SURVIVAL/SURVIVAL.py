@@ -1,5 +1,5 @@
 ﻿from artwork import *
-from Battle import *
+from battle import Hero, Enemy
 
 pegi()
 survival()
@@ -68,6 +68,7 @@ elif(startChoice == "yes"):
         exit()
             
     elif(moneyChoice == "no"):
+        print_slow("You end up fighting David\n",0.075)
         battle(player, enemy)
 
         if(fightChoice == "punch"):

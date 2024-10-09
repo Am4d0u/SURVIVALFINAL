@@ -1,87 +1,50 @@
-import random
+from tkinter import CHAR
+from weapon import fists
 
-def battle(player, enemy):
-    # Battle System
-    # While the battle is ongoing, keep looping
-    battle = True
-
-    while battle:
-
-        #Select Player Option
-        while True:
-            print("'Attack or Flee'")
-            player_choice = input("What do you want to do:").lower()
-
-            if player_choice == "attack":
-                player.attack(enemy)
-                break
-            elif player_choice == "flee":
-                player.flee()
-                break
-            else:
-                print("Invalid option")
-
-        enemy.health_check()
-
-        # Select Enemy Option
-        enemy_choice = 1
-
-        if enemy_choice == 1:
-            enemy.attack(player)
-        elif enemy_choice == 2:
-            player.health_check()
-
-
-    #If player or enemy health is equal to 0, break loop and end battle
-
-
-
-# Class to create player character
-class Player:
-    def __init__(self, name, health, damage):
-        self.name = name  
-        self.health = health
-        self.damage = damage
-
-    # Function to attack enemies
-    def attack(self, target):
-        print("Attack")
-        target.health -= 50
-
-    # Function to flee the battle
-    def flee(self):
-        print("Flee")
-
-    # Function to check health
-    def health_check(self):
-        print("Health Check: ", self.health)
-        if self.health <= 0:
-            print("You died... skill issue...")
-            battle = False
-
-# Class to create enemies
-class Enemy:
-    def __init__(self, name, health, damage):
+class Character:
+    def __init__(self, 
+                 name: str, 
+                 health: int,
+                 ) -> None:
         self.name = name
         self.health = health
-        self.damage = damage
+        self.health_max = health
 
-    # Function to attack the player
-    def attack(self, target):
-        print("Attack")
-        target.ealth -= 50
+        self.weapon = fists
 
-    # Function to flee
-    def flee(self):
-        print("Flee")
+    def attack(self, target ) -> None:
+        target.health -= self.weapon.damage
+        target.health = max(target.health, 0)
 
-    # Function to check health
-    def health_check(self):
-        print("Health Check: ", self.health)
-        print("Enemy died... their skill issue...")
-        battle = False
+        def attack(self, target) -> None:
+            target.health -= self.weapon.damage
+            target.health = max(target.health, 0)
 
-# Instantiates player and enemy
-player = Player("Player One", 50, 50)
-enemy = Enemy("Donald Trump", 200, 10)
+hero = Hero(name= "Hero", health=100)
+enemy = Enemy(name ="David", health=100)
+
+while True:
+    hero.attack(enemy)
+    enemy.attack(hero)
+
+    print(f"Health of {hero.name}: {hero.health}")
+    print(f"Health of {enemy.name}: {enemy.health}")
+
+    input()
+
+class Hero(Character):
+    def __int__(self,
+                name: str,
+                health: int
+                ) -> None:
+        super().__init__(name=name, health=health)
+
+
+class Enemy(Character):
+    def __int__(self,
+                name: str,
+                health: int
+                ) -> None:
+        super().__init__(name=name, health=health)
+
 
