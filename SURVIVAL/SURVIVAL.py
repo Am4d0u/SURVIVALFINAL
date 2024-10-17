@@ -145,13 +145,13 @@ def main():
                 print_slow("You and his gang scheme to rob a house.\n\n", game_speed)
                 print_slow("It turns left, and you are killed by the house pit bull.\n\n", 
                            game_speed)
+                pitbull()
                 gameover()
 
             elif money_choice.lower() == "no":
                 print_slow("You end up fighting David.\n", game_speed)
-                print_slow("Do you want to fight him or run away? (fight/run)\n", 
-                           game_speed)
-
+                print_slow("Type 'fight' to initiate it.\n",game_speed)
+              
                 fight_choice = input("> ")
 
                 if fight_choice.lower() == "fight":
@@ -184,7 +184,7 @@ def main():
 
                     # Battle Result
                     if hero.health > 0:
-                        print_slow("You defeated David!\n\n", game_speed)
+                        print_slow("You killed David!\n\n", game_speed)
                         print_slow("You are sentenced to 4 years for manslaughter.\n\n", 
                                    game_speed)
                         print_slow("4 YEARS LATER...\n\n", game_speed)
