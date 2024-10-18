@@ -18,8 +18,6 @@ def print_slow(message, delay=0.05):
 # Function to display the game speed menu and get speed choice
 def display_speed_menu():
     clear_console()
-    f = open("SURVIVAL.txt","a")
-    print(f.read())
     print("Choose the game speed:")
     print("1. Fast")
     print("2. Normal")
