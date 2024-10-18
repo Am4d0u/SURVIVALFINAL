@@ -18,7 +18,8 @@ def print_slow(message, delay=0.05):
 # Function to display the game speed menu and get speed choice
 def display_speed_menu():
     clear_console()
-    print("SURVIVAL")
+    f = open("SURVIVAL.txt","a")
+    print(f.read())
     print("Choose the game speed:")
     print("1. Fast")
     print("2. Normal")
@@ -41,19 +42,6 @@ def gameover():
     print_slow("Game Over! Thanks for playing!", 0.05)
     exit()
 
-# Function for additional encounters
-def random_encounter(name, game_speed):
-    encounters = [
-        "You find a wallet on the ground. Do you take it or return it? "
-        "(take/return)",
-        "You meet an old friend who offers you drugs. Do you accept or "
-        "decline? (accept/decline)",
-        "A stray dog approaches you. Do you pet it or ignore it? (pet/ignore)"
-    ]
-
-    encounter = encounters[random.randint(0, len(encounters) - 1)]
-    print_slow(encounter, game_speed)
-
     choice = input("> ")
 
     if "take" in choice:
@@ -68,10 +56,6 @@ def random_encounter(name, game_speed):
     elif "decline" in choice:
         print_slow("You declined the offer and chose to stay clean.\n", 
                    game_speed)
-    elif "pet" in choice:
-        print_slow("The dog becomes your loyal companion!\n", game_speed)
-    elif "ignore" in choice:
-        print_slow("You ignored the dog and it walks away.\n", game_speed)
 
 # Main game logic
 def main():
@@ -201,8 +185,9 @@ def main():
                                        "job.\n\n", game_speed)
                             print_slow("5 years later...\n\n", game_speed)
                             print_slow("The UK is bombed by Russia...\n\n", game_speed)
-                            print_slow("Everyone dies including you....THE END.\n\n", 
+                            print_slow("Everyone dies including you....LOSER.\n\n", 
                                        game_speed)
+                            print_slow("Choose better options to improve your destiny.\n\n", game_speed)
                             gameover()
 
                         elif move_choice.lower() == "gang":
@@ -217,14 +202,14 @@ def main():
                             random_encounter(name, game_speed)
 
                             print_slow("Do you want to continue in the gang or leave it? "
-                                       "(continue/leave)\n", game_speed)
+                                       "(continue/leave)\n\n", game_speed)
                             gang_choice = input("> ")
 
                             if gang_choice.lower() == "continue":
                                 print_slow("You rise through the ranks, but the law is "
-                                           "closing in.\n", game_speed)
+                                           "closing in.\n\n", game_speed)
                                 print_slow("A rival gang ambushes you. Fight or flee? "
-                                           "(fight/flee)\n", game_speed)
+                                           "(fight/flee)\n\n", game_speed)
                                 
                                 ambush_choice = input("> ")
 
@@ -234,29 +219,29 @@ def main():
                                     gameover()
                                 elif ambush_choice.lower() == "flee":
                                     print_slow("You escape but are now on the run. Life "
-                                               "becomes tough.\n", game_speed)
-                                    print_slow("You end up living in hiding for years.\n", 
+                                               "becomes tough.\n\n", game_speed)
+                                    print_slow("You end up living in hiding for years.\n\n", 
                                                game_speed)
                                     gameover()
 
                             elif gang_choice.lower() == "leave":
-                                print_slow("You decide to leave the gang. It's a tough choice.\n", 
+                                print_slow("You decide to leave the gang. It's a tough choice.\n\n", 
                                            game_speed)
-                                print_slow("You try to get a normal job, but your past haunts you.\n", 
+                                print_slow("You try to get a normal job, but your past haunts you.\n\n", 
                                            game_speed)
                                 print_slow("Will you tell the truth about your past or lie on "
-                                           "your resume? (truth/lie)\n", game_speed)
+                                           "your resume? (truth/lie)\n\n", game_speed)
 
                                 truth_choice = input("> ")
 
                                 if truth_choice.lower() == "truth":
                                     print_slow("You honestly reveal your past. They respect your "
-                                               "honesty.\n", game_speed)
-                                    print_slow("You get the job! Congratulations!\n", game_speed)
+                                               "honesty.\n\n", game_speed)
+                                    print_slow("You get the job! Congratulations!\n\n", game_speed)
                                     gameover()
                                 elif truth_choice.lower() == "lie":
                                     print_slow("You lie on your resume. They find out and fire "
-                                               "you.\n", game_speed)
+                                               "you.\n\n", game_speed)
                                     gameover()
 
 # Start the game
